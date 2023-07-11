@@ -15,22 +15,21 @@ En el año 2012, un grupo de ingenieros de *Microsoft* desarrollaron **TypeScrip
 
 Además del tipado estático opcional, **TypeScript** también ofrece algunas características adicionales que no están presentes en **JS**, como *clases*, *interfaces*, *enumeraciones* y un sistema de módulos más estructurado. Estas características hacen que sea más fácil **escribir y mantener código en proyectos grandes y complejos**.
 
-:fire: Uno de los beneficios más importantes de TypeScript es que permite la corrección del código mientras lo estamos escribiendo, de forma estática. De otra forma tendríamos que esperar hasta el momento de ejecución del código (runtime) para ver los posibles errores.
+:fire: Uno de los beneficios más importantes de **TypeScript** es que permite la *corrección del código mientras lo estamos escribiendo*, de forma estática. De otra forma tendríamos que esperar hasta el momento de ejecución del código (runtime) para ver los posibles errores.
 
 <p align="center">
   <img src="https://learntypescript.dev/static/f5c65fe3cf6dbed670bc14754c33342b/6d494/ts-js.webp"/>
 </p>
 
-:boom: VisualStudio Code está desarrollado con TypeScript, así como NodeJS, React, Angular, YouTube, Facebook, Instagram, Twitter, ¡entre otros muchos otros!
+:boom: **VisualStudio Code** está desarrollado con **TypeScript**, así como **NodeJS**, **React**, **Angular**, **YouTube**, **Facebook**, **Instagram**, **Twitter**, ¡entre otros muchos otros!
 
 <h2 align="center"> Anotación de tipos (type annotation) y afirmación de tipos (type assertion) </h2>
 
 Hay distintas formas de **decirle al compilador** de TS el tipo de dato que queremos. Cuando necesitamos indicar el tipo de dato que una variable o constante tendrá a lo largo de su vida, usamos la **anotación de tipo**. Entonces, cuando alguien intente asignar un tipo que es incompatible al establecido, habrá error:
 
-`let age: number = 27;`
-`let name: string = 'Ada';`
-
-`age = name;` **==>** *ERROR: Argument of type 'string' is not assignable to parameter of type 'number'.*
+- `let age: number = 27;`
+- `let name: string = 'Ada';`
+- `age = name;` *ERROR: Argument of type 'string' is not assignable to parameter of type 'number'.*
 
 Cuando necesitamos convertir variables o constantes a un tipo en específico **(casting)** usamos las llamadas **afirmaciones de tipo**:
 
