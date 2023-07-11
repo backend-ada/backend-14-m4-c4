@@ -41,21 +41,23 @@ Cuando necesitamos convertir variables o constantes a un tipo en específico **(
 
 <h2 align="center"> Dependencias a instalar </h2>
 
-- **Inicializar el proyecto con npm init**
-- **TypeScript**
-- **ts-node**
+- `npm init -y`
+- `npm install --save-dev typescript`
+- `npm install --save-dev ts-node`
 
-- `npm install --save-dev typescript ts-node`
+**ó**
+
+- `npm i -D typescript ts-node`
 
 <h2 align="center"> Configuraciones básicas </h2>
 
 - En el package.json, están configurados los scripts "dev": "ts-node index" para ejecutar nuestro código usando ts-node, y "compile" para que el compilador de TS transpile el código a Vanilla JS, es decir, JS puro.
-- En el archivo tsconfig.json están las configuraciones básicas necesarias para poder usar correctamente TS en nuestro programa.
+- En el archivo tsconfig.json están las configuraciones básicas necesarias para poder usar correctamente TS en nuestro programa:
     * El parámetro "target" permite configurar la versión ECMAScript en la que será transpilado el código TS.
     * Con el parámetro "module" seteamos el sistema de módulos a implementar por el programa. En nuestro caso, como desarrolladores Backend, en la mayoría de los casos usaremos "CommonJS" ya que estaremos trabajando con Node. Distrinto sería si trabajamos en el front.
     * El último parámetro "outDir" permite configurar la ruta de la carpeta en donde se guardarán todos los archivos TS transpilados a JS.
 
-<h2 align="center"> TypeScript Compiler | Comando tsc </h2>
+<h2 align="center"> TypeScript Compiler - tsc </h2>
 
 Para poder traducir todo el código que escribimos en TypeScript, es necesario llevar a cabo un proceso de transpilación, en el que básicamente el compilador de TS se encarga de realizar varias comprobaciones de sintáxis, semántica, verificar coherencia de tipos y corregir errores. Finalmente, convierte todo el código de TS a JS puro, también conocido como Vanilla JavaScript.
 
@@ -63,7 +65,9 @@ En el package.json está configurado uno de los scripts como "compile", el cual 
 
 - `npm run compile`
 
-<h3> Pero... ¿qué diferencia hay entre la *compilación* y la *transpilación*? </h3>
+Luego de ejecutar este comando, se crearán los archivos JS con código TS transpilado, en la carpeta especificada en el parámetro `"outDir"` en el tsconfig.json. 
+
+<h2 align="center"> Pero... ¿qué diferencia hay entre la *compilación* y la *transpilación*? </h2>
 
 Cuando hablamos de traducir código entre dos lenguajes que están en el mismo nivel de abstracción, como en el caso de JavaScript y TypeScript, se trata de un caso de transpilación. En cambio, cuando traducimos código entre dos lenguajes que se encuentran en distinto nivel de abstracción, cómo en el caso de C++ que es compilado a lenguaje máquina.
 
