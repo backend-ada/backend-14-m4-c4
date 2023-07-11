@@ -4,23 +4,24 @@
   <img src="https://cdn.thenewstack.io/media/2022/01/10b88c68-typescript-logo-1024x576.png"/>
 </p>
 
-- Es un superset/conjunto de JavaScript. Todo el codigo de JS es compatible con TS.
-- Fue creado por Microsoft y proporciona tipos a JS. JS es de tipado debil y dinámico.
 
-- TIPADO DEBIL: Los tipos de las variables/constantes se asocian automáticamente.
-- TIPADO DINÁMICO: Las variables pueden cambiar de tipo.
+**TypeScript** es un superconjunto (superset) de JavaScript. Esto significa que es un lenguaje que usa como base a JavaScript, por lo que todo el codigo de JS es 100% compatible con TS, pero le agrega varias funcionalidades y características.
 
-- Además del tipado estático opcional, TypeScript también ofrece algunas características adicionales que no están presentes en JavaScript, como clases, interfaces, enumeraciones y un sistema de módulos más estructurado. Estas características hacen que sea más fácil escribir y mantener código en proyectos grandes y complejos.
+En el año 2012, un grupo de ingenieros de *Microsoft* desarrollaron **TypeScript** con el propósito de mejorar los puntos débiles de JavaScript, añadéndole nuevas funciones:
 
-- Uno de los beneficios más importantes de TypeScript es que permite la corrección del código mientras lo estamos escribiendo, de forma estática. De otra forma tendríamos que esperar hasta el momento de ejecución del código (runtime) para ver los posibles errores.
+- Proporciona tipos a **JavaScript**.
+- Convierte a **JS** en un lenguaje de *tipado estático*. Es decir, no podremos cambiar el tipo de las variables una vez inicializadas. 
+- Convierte a **JS** en un lenguaje *fuertemente tipado*. En otras palabras, no podremos procesar datos de diferentes tipos. ¡SÍ! Ésto elimina la *coerción de tipos*.
+
+Además del tipado estático opcional, **TypeScript** también ofrece algunas características adicionales que no están presentes en **JS**, como *clases*, *interfaces*, *enumeraciones* y un sistema de módulos más estructurado. Estas características hacen que sea más fácil **escribir y mantener código en proyectos grandes y complejos**.
+
+:fire: Uno de los beneficios más importantes de TypeScript es que permite la corrección del código mientras lo estamos escribiendo, de forma estática. De otra forma tendríamos que esperar hasta el momento de ejecución del código (runtime) para ver los posibles errores.
 
 <p align="center">
   <img src="https://learntypescript.dev/static/f5c65fe3cf6dbed670bc14754c33342b/6d494/ts-js.webp"/>
 </p>
 
-- VSCOde está desarrollado con TS!
-
-- No es necesario tipar cuando es obvio.
+:boom: VisualStudio Code está desarrollado con TypeScript, así como NodeJS, React, Angular, YouTube, Facebook, Instagram, Twitter, ¡entre otros muchos otros!
 
 <h2 align="center"> Anotación de tipos (type annotation) y afirmación de tipos (type assertion) </h2>
 
